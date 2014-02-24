@@ -1,0 +1,1 @@
+/home/hartman1/ghost_hartman.dj/index.js
