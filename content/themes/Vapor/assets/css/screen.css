@@ -38,7 +38,7 @@ a:visited {
 }
 a:focus,
 a:hover {
-  color: #02090e;
+  color: #3498DB;
 }
 p,
 li,
@@ -106,17 +106,29 @@ article.preview p.readmore {
 /* === Header === */
 #blog-logo {
   display: block;
-  max-width: 100px;
+  max-width: 125px;
   margin: 50px auto 0;
   text-align: center;
 }
 #blog-logo div.bloglogo {
-  width: 100px;
-  height: 100px;
+  width: 115px;
+  height: 115px;
   border-radius: 50%;
   background-size: cover !important;
   background-position: center center !important;
   background-color: #ffffff;
+}
+#blog-logo-bg {
+  width: 115px;
+  height: 115px;
+  background-color: #efefef;
+  border: 3px solid #3498DB;
+  -webkit-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+     -moz-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+          box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
 }
 h1.blog-title,
 h2.blog-description {
@@ -233,7 +245,7 @@ h1.post-title a:focus,
 h1.post-title a:hover,
 h1.blog-title a:focus,
 h1.blog-title a:hover {
-  color: #3498db;
+  color: #3498DB;
   text-decoration: none;
 }
 h2 {
@@ -347,7 +359,7 @@ a.archive-link {
   padding: 0.5em 0;
 }
 .pagination a {
-  color: #3498db;
+  color: #3498DB;
 }
 .older-posts,
 .newer-posts {
@@ -371,7 +383,7 @@ a.archive-link {
 }
 .older-posts:hover,
 .newer-posts:hover {
-  color: #02090e;
+  color: #3498DB;
   text-decoration: none;
 }
 /* === Extras === */
