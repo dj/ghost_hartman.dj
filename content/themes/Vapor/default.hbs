@@ -17,14 +17,22 @@
     {{ghost_head}}
 </head>
 <body class="{{body_class}}">
+    <div id="topbar">
+    </div>
 
     {{{body}}}
 
     <footer class="site-footer">
         <div class="inner">
-             <section class="copyright">&copy; {{date format="YYYY"}} <a href="/">{{@blog.title}}</a>. All rights reserved.</section>
-             <section>Vapor theme by <a href="http://sethlilly.com/">Seth Lilly</a></section>
-             <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org"><span class="hidden">Ghost</span></a></section>
+            <section>
+                A Blog by <a href="{{author.website}}">Daniel Jay Hartman</a>
+            </section>
+             <section class="copyright">
+                All posts free to share and adapt with attribution under this <a href="http://creativecommons.org/licenses/by/4.0/"> Creative Commons Lisence</a>
+             </section>
+             <section class="poweredby">Proudly published with
+                <a class="icon-ghost" href="http://ghost.org">
+                <span>GHOST</span></a> and a fork of <a href="http://github.com/djhartman/hartman.dj">Seth Lilly's Vapor theme.</a></section>
         </div>
     </footer>
 
