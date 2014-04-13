@@ -10,21 +10,6 @@ config = {
         // The url to use when providing links to the site, E.g. in RSS and email.
         url: 'http://hartman.dj',
 
-        // Example mail config
-        // Visit http://docs.ghost.org/mail for instructions
-        // ```
-        //  mail: {
-        //      transport: 'SMTP',
-        //      options: {
-        //          service: 'Mailgun',
-        //          auth: {
-        //              user: '', // mailgun username
-        //              pass: ''  // mailgun password
-        //          }
-        //      }
-        //  },
-        // ```
-
         database: {
             client: 'sqlite3',
             connection: {
@@ -45,7 +30,16 @@ config = {
     // Configure your URL and mail settings here
     production: {
         url: 'http://hartman.dj',
-        mail: {},
+        mail: {
+            transport: 'SMTP',
+            options: {
+                service: 'Mailgun',
+                auth: {
+                    user: 'blog',
+                    pass: process.env.MAILGUN_PASS
+                }
+            }
+        },
         database: {
             client: 'mysql',
             connection: {
